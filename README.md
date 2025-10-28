@@ -192,4 +192,3 @@ private getCommonExamples(component: string): string {
 ## Licencia
 
 MIT
-# PrimeNG_MCP
