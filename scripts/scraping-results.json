@@ -1,0 +1,2181 @@
+{
+  "installation": {
+    "pageName": "installation",
+    "url": "https://primeng.org/installation",
+    "title": "Getting Started - PrimeNG",
+    "metaDescription": "Setting up PrimeNG in an Angular CLI project.",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Installation"
+      },
+      {
+        "level": "h2",
+        "text": "Download #"
+      },
+      {
+        "level": "h2",
+        "text": "Provider #"
+      },
+      {
+        "level": "h2",
+        "text": "Verify #"
+      },
+      {
+        "level": "h2",
+        "text": "Example #"
+      },
+      {
+        "level": "h2",
+        "text": "Next Steps #"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Download #",
+        "contentPreview": "Download #PrimeNG is available for download on the npm registry.\n# Using npm\nnpm install primeng @primeuix/themes\n\n# Using yarn\nyarn add primeng @primeuix/themes\n\n# Using pnpm\npnpm add primeng @primeu..."
+      },
+      {
+        "title": "Provider #",
+        "contentPreview": "Provider #Add providePrimeNG and provideAnimationsAsync to the list of providers in your app.config.ts and use the theme property to configure a theme such as Aura.\nimport { ApplicationConfig } from '..."
+      },
+      {
+        "title": "Verify #",
+        "contentPreview": "Verify # Verify your setup by adding a component such as Button. Each component can be imported and registered individually so that you only include what you use for bundle optimization. Import path i..."
+      },
+      {
+        "title": "Example #",
+        "contentPreview": "Example #An example starter with Angular CLI is available at GitHub...."
+      },
+      {
+        "title": "Next Steps #",
+        "contentPreview": "Next Steps #Welcome to the Prime UI Ecosystem! Once you have PrimeNG up and running, we recommend exploring the following resources to gain a deeper understanding of the library.Global configurationCu..."
+      }
+    ],
+    "codeBlocks": [
+      {
+        "index": 0,
+        "language": "unknown",
+        "preview": "# Using npm\nnpm install primeng @primeuix/themes\n\n# Using yarn\nyarn add primeng @primeuix/themes\n\n# Using pnpm\npnpm add primeng @primeuix/themes"
+      },
+      {
+        "index": 1,
+        "language": "unknown",
+        "preview": "import { ApplicationConfig } from '@angular/core';\nimport { provideAnimationsAsync } from '@angular/platform-browser/animations/async';\nimport { provi..."
+      },
+      {
+        "index": 2,
+        "language": "unknown",
+        "preview": "import { Component } from '@angular/core';\nimport { ButtonModule } from 'primeng/button';\n\n@Component({\n    selector: 'button-demo',\n    templateUrl: ..."
+      },
+      {
+        "index": 3,
+        "language": "unknown",
+        "preview": "<p-button label=\"Check\" />"
+      }
+    ],
+    "tables": [],
+    "lists": [
+      {
+        "type": "ul",
+        "itemCount": 9,
+        "sampleItems": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 4,
+        "sampleItems": [
+          "v20",
+          "v19",
+          "v18",
+          "v17"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 14,
+        "sampleItems": [
+          "Getting StartedInstallationConfigurationPlayground",
+          "Theming",
+          "ComponentsFormAutoCompleteCascadeSelectCheckboxColorPickerDatePickerEditorFloatLabelIconFieldIftaLab",
+          "IconsPrime IconsCustom Icons",
+          "Pass ThroughNEW"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Installation",
+          "Configuration",
+          "Playground"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 12,
+        "sampleItems": [
+          "FormAutoCompleteCascadeSelectCheckboxColorPickerDatePickerEditorFloatLabelIconFieldIftaLabelInputGro",
+          "ButtonButtonSpeedDialSplitButton",
+          "DataDataViewOrderListOrgChartPaginatorPickListTableTimelineTreeTreeTableVirtualScroller",
+          "PanelAccordionCardDividerFieldsetPanelScrollPanelSplitterStepperTabsToolbar",
+          "OverlayConfirmDialogConfirmPopupDialogDrawerDynamicDialogPopoverTooltip"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 28,
+        "sampleItems": [
+          "AutoComplete",
+          "CascadeSelect",
+          "Checkbox",
+          "ColorPicker",
+          "DatePicker"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Button",
+          "SpeedDial",
+          "SplitButton"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 10,
+        "sampleItems": [
+          "DataView",
+          "OrderList",
+          "OrgChart",
+          "Paginator",
+          "PickList"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 10,
+        "sampleItems": [
+          "Accordion",
+          "Card",
+          "Divider",
+          "Fieldset",
+          "Panel"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 7,
+        "sampleItems": [
+          "ConfirmDialog",
+          "ConfirmPopup",
+          "Dialog",
+          "Drawer",
+          "DynamicDialog"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "Upload"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 8,
+        "sampleItems": [
+          "Breadcrumb",
+          "ContextMenu",
+          "Dock",
+          "Menu",
+          "Menubar"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "Chart.js"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Message",
+          "Toast"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Carousel",
+          "Galleria",
+          "Image",
+          "ImageCompare"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 20,
+        "sampleItems": [
+          "AnimateOnScroll",
+          "AutoFocus",
+          "Avatar",
+          "Badge",
+          "BindNEW"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "FilterService"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Prime Icons",
+          "Custom Icons"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Overview",
+          "Guide"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Overview",
+          "Guide",
+          "CI Pipeline"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Accessibility",
+          "PrimeFlex",
+          "PrimeTV",
+          "RTL"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Updating to v20",
+          "Updating to v19"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Discord Server",
+          "Forum",
+          "Long Term Support",
+          "PRO Support"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 9,
+        "sampleItems": [
+          "About Us",
+          "Roadmap",
+          "Source Code",
+          "Changelog",
+          "Contribution"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 1,
+        "sampleItems": [
+          "THEMING"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 3,
+        "sampleItems": [
+          "Global configuration",
+          "Customization of styles",
+          "Getting support"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 5,
+        "sampleItems": [
+          "Download",
+          "Provider",
+          "Verify",
+          "Example",
+          "Next Steps"
+        ]
+      }
+    ],
+    "mainContentLength": 1708,
+    "mainContentPreview": "InstallationSetting up PrimeNG in an Angular CLI project. Download #PrimeNG is available for download on the npm registry.\n# Using npm\nnpm install primeng @primeuix/themes\n\n# Using yarn\nyarn add primeng @primeuix/themes\n\n# Using pnpm\npnpm add primeng @primeuix/themes\n\n Provider #Add providePrimeNG and provideAnimationsAsync to the list of providers in your app.config.ts and use the theme property to configure a theme such as Aura.\nimport { ApplicationConfig } from '@angular/core';\nimport { provi"
+  },
+  "theming": {
+    "pageName": "theming",
+    "url": "https://primeng.org/theming",
+    "title": "Theming - PrimeNG",
+    "metaDescription": "Choose from a variety of pre-styled themes or develop your own.",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Theming"
+      },
+      {
+        "level": "h2",
+        "text": "Architecture #"
+      },
+      {
+        "level": "h3",
+        "text": "Primitive Tokens"
+      },
+      {
+        "level": "h3",
+        "text": "Semantic Tokens"
+      },
+      {
+        "level": "h3",
+        "text": "Component Tokens"
+      },
+      {
+        "level": "h3",
+        "text": "Best Practices"
+      },
+      {
+        "level": "h2",
+        "text": "Configuration API #"
+      },
+      {
+        "level": "h3",
+        "text": "Theme #"
+      },
+      {
+        "level": "h3",
+        "text": "Options #"
+      },
+      {
+        "level": "h4",
+        "text": "prefix"
+      },
+      {
+        "level": "h4",
+        "text": "darkModeSelector"
+      },
+      {
+        "level": "h4",
+        "text": "cssLayer"
+      },
+      {
+        "level": "h2",
+        "text": "Presets #"
+      },
+      {
+        "level": "h2",
+        "text": "Reserved Keys #"
+      },
+      {
+        "level": "h2",
+        "text": "Colors #"
+      },
+      {
+        "level": "h2",
+        "text": "Dark Mode #"
+      },
+      {
+        "level": "h2",
+        "text": "Customization #"
+      },
+      {
+        "level": "h3",
+        "text": "definePreset #"
+      },
+      {
+        "level": "h3",
+        "text": "Color Scheme #"
+      },
+      {
+        "level": "h3",
+        "text": "Primary #"
+      },
+      {
+        "level": "h3",
+        "text": "Surface #"
+      },
+      {
+        "level": "h3",
+        "text": "Noir #"
+      },
+      {
+        "level": "h3",
+        "text": "Font #"
+      },
+      {
+        "level": "h3",
+        "text": "Forms #"
+      },
+      {
+        "level": "h3",
+        "text": "Focus Ring #"
+      },
+      {
+        "level": "h3",
+        "text": "Component #"
+      },
+      {
+        "level": "h3",
+        "text": "Extend #"
+      },
+      {
+        "level": "h2",
+        "text": "Scoped Tokens #"
+      },
+      {
+        "level": "h2",
+        "text": "Utils #"
+      },
+      {
+        "level": "h3",
+        "text": "usePreset #"
+      },
+      {
+        "level": "h3",
+        "text": "updatePreset #"
+      },
+      {
+        "level": "h3",
+        "text": "updatePrimaryPalette #"
+      },
+      {
+        "level": "h3",
+        "text": "updateSurfacePalette #"
+      },
+      {
+        "level": "h3",
+        "text": "$dt #"
+      },
+      {
+        "level": "h3",
+        "text": "palette #"
+      },
+      {
+        "level": "h2",
+        "text": "CSS Layer #"
+      },
+      {
+        "level": "h3",
+        "text": "Specificity #"
+      },
+      {
+        "level": "h3",
+        "text": "Reset #"
+      },
+      {
+        "level": "h2",
+        "text": "Scale #"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Architecture #",
+        "contentPreview": "Architecture # PrimeNG is a design agnostic library so unlike some other UI libraries it does not enforce a certain styling such as material design. Styling is decoupled from the components using the ..."
+      },
+      {
+        "title": "Configuration API #",
+        "contentPreview": "Configuration API # Theme #The theme property is used to customize the initial theme.\nimport { ApplicationConfig } from '@angular/core';\nimport { provideAnimationsAsync } from '@angular/platform-brows..."
+      },
+      {
+        "title": "Presets #",
+        "contentPreview": "Presets # Aura, Material, Lara and Nora are the available built-in options, created to demonstrate the power of the design-agnostic theming. Aura is PrimeTek's own vision, Material follows Google Mate..."
+      },
+      {
+        "title": "Reserved Keys #",
+        "contentPreview": "Reserved Keys # Following keys are reserved in the preset scheme and cannot be used as a token name; primitive, semantic, components, directives, colorscheme, light, dark, common, root, states and ext..."
+      },
+      {
+        "title": "Colors #",
+        "contentPreview": "Colors #Color palette of a preset is defined by the primitive design token group. You can access colors using CSS variables or the $dt utility.\n// With CSS\nvar(--p-blue-500)\n\n// With JS\n$dt('blue.500'..."
+      },
+      {
+        "title": "Dark Mode #",
+        "contentPreview": "Dark Mode # PrimeNG uses the system as the default darkModeSelector in theme configuration. If you have a dark mode switch in your application, set the darkModeSelector to the selector you utilize suc..."
+      },
+      {
+        "title": "Customization #",
+        "contentPreview": "Customization # definePreset #The definePreset utility is used to customize an existing preset during the PrimeNG setup. The first parameter is the preset to customize and the second is the design tok..."
+      },
+      {
+        "title": "Scoped Tokens #",
+        "contentPreview": "Scoped Tokens #Design tokens can be scoped to a certain component using the dt property. In this example, first switch uses the global tokens whereas second one overrides the global with its own token..."
+      },
+      {
+        "title": "Utils #",
+        "contentPreview": "Utils # usePreset #Replaces the current presets entirely, common use case is changing the preset dynamically at runtime.\nimport { usePreset } from '@primeuix/themes';\n\n\nonButtonClick() {\n    usePreset..."
+      },
+      {
+        "title": "CSS Layer #",
+        "contentPreview": "CSS Layer # Specificity # The @layer is a standard CSS feature to define cascade layers for a customizable order of precedence. If you need to become more familiar with layers, visit the documentation..."
+      },
+      {
+        "title": "Scale #",
+        "contentPreview": "Scale # PrimeNG UI component use rem units, 1rem equals to the font size of the html element which is 16px by default. Use the root font-size to adjust the size of the components globally. This websit..."
+      }
+    ],
+    "codeBlocks": [
+      {
+        "index": 0,
+        "language": "unknown",
+        "preview": "import { ApplicationConfig } from '@angular/core';\nimport { provideAnimationsAsync } from '@angular/platform-browser/animations/async';\nimport { provi..."
+      },
+      {
+        "index": 1,
+        "language": "unknown",
+        "preview": "options: {\n    prefix: 'my'\n}"
+      },
+      {
+        "index": 2,
+        "language": "unknown",
+        "preview": "options: {\n    darkModeSelector: '.my-app-dark'\n}"
+      },
+      {
+        "index": 3,
+        "language": "unknown",
+        "preview": "options: {\n    cssLayer: {\n        name: 'primeng',\n        order: 'app-styles, primeng, another-css-library'\n    }\n}"
+      },
+      {
+        "index": 4,
+        "language": "unknown",
+        "preview": "// With CSS\nvar(--p-blue-500)\n\n// With JS\n$dt('blue.500').value"
+      },
+      {
+        "index": 5,
+        "language": "unknown",
+        "preview": "providePrimeNG({\n    theme: {\n        preset: Aura,\n        options: {\n            darkModeSelector: '.my-app-dark'\n        }\n    }\n})"
+      },
+      {
+        "index": 6,
+        "language": "unknown",
+        "preview": "<p-button label=\"Toggle Dark Mode\" (onClick)=\"toggleDarkMode()\"/>"
+      },
+      {
+        "index": 7,
+        "language": "unknown",
+        "preview": "toggleDarkMode() {\n    const element = document.querySelector('html');\n    element.classList.toggle('my-app-dark');\n}"
+      },
+      {
+        "index": 8,
+        "language": "unknown",
+        "preview": "<html class=\"my-app-dark\">"
+      },
+      {
+        "index": 9,
+        "language": "unknown",
+        "preview": "providePrimeNG({\n    theme: {\n        preset: Aura,\n        options: {\n            darkModeSelector: false || 'none'\n        }\n    }\n})"
+      },
+      {
+        "index": 10,
+        "language": "unknown",
+        "preview": "//mypreset.ts\nimport { definePreset } from '@primeuix/themes';\nimport Aura from '@primeuix/themes/aura';\n\nconst MyPreset = definePreset(Aura, {\n    //..."
+      },
+      {
+        "index": 11,
+        "language": "unknown",
+        "preview": "import { ApplicationConfig } from '@angular/core';\nimport { provideAnimationsAsync } from '@angular/platform-browser/animations/async';\nimport { provi..."
+      },
+      {
+        "index": 13,
+        "language": "unknown",
+        "preview": "/* Fails as Aura defines highlight tokens in colorScheme */\nconst MyPreset = definePreset(Aura, {\n    semantic: {\n        highlight: {\n            bac..."
+      },
+      {
+        "index": 15,
+        "language": "unknown",
+        "preview": "const MyPreset = definePreset(Aura, {\n    semantic: {\n        primary: {\n            50: '{indigo.50}',\n            100: '{indigo.100}',\n            2..."
+      },
+      {
+        "index": 18,
+        "language": "unknown",
+        "preview": "const MyPreset = definePreset(Aura, {\n    semantic: {\n        colorScheme: {\n            light: {\n                formField: {\n                    hov..."
+      },
+      {
+        "index": 19,
+        "language": "unknown",
+        "preview": "const MyPreset = definePreset(Aura, {\n    semantic: {\n        focusRing: {\n            width: '2px',\n            style: 'dashed',\n            color: '..."
+      },
+      {
+        "index": 23,
+        "language": "unknown",
+        "preview": "import { usePreset } from '@primeuix/themes';"
+      },
+      {
+        "index": 24,
+        "language": "unknown",
+        "preview": "onButtonClick() {\n    usePreset(MyPreset);\n}"
+      },
+      {
+        "index": 25,
+        "language": "unknown",
+        "preview": "import { updatePreset } from '@primeuix/themes';"
+      },
+      {
+        "index": 27,
+        "language": "unknown",
+        "preview": "import { updatePrimaryPalette } from '@primeuix/themes';"
+      },
+      {
+        "index": 28,
+        "language": "unknown",
+        "preview": "changePrimaryColor() {\n    updatePrimaryPalette({\n        50: '{indigo.50}',\n        100: '{indigo.100}',\n        200: '{indigo.200}',\n        300: '{..."
+      },
+      {
+        "index": 29,
+        "language": "unknown",
+        "preview": "import { updateSurfacePalette } from '@primeuix/themes';"
+      },
+      {
+        "index": 30,
+        "language": "unknown",
+        "preview": "changeSurfaces() {\n    //changes surfaces both in light and dark mode\n    updateSurfacePalette({\n        50: '{zinc.50}',\n        // ...\n        950: ..."
+      },
+      {
+        "index": 31,
+        "language": "unknown",
+        "preview": "const changeLightSurfaces() {\n    //changes surfaces only in light\n    updateSurfacePalette({\n        light: {\n            50: '{zinc.50}',\n          ..."
+      },
+      {
+        "index": 32,
+        "language": "unknown",
+        "preview": "function changeDarkSurfaces() {\n    //changes surfaces only in dark mode\n    updateSurfacePalette({\n        dark: {\n            50: '{zinc.50}',\n     ..."
+      },
+      {
+        "index": 33,
+        "language": "unknown",
+        "preview": "import { $dt } from '@primeuix/themes';"
+      },
+      {
+        "index": 35,
+        "language": "unknown",
+        "preview": "import { palette } from '@primeuix/themes';"
+      },
+      {
+        "index": 36,
+        "language": "unknown",
+        "preview": "// custom color\nconst values1 = palette('#10b981');\n\n// copy an existing token set\nconst primaryColor = palette('{blue}');"
+      },
+      {
+        "index": 37,
+        "language": "unknown",
+        "preview": "/* Order */\n@layer reset, primeng;\n\n/* Reset CSS */\n@layer reset {\n    button,\n    input {\n        /* CSS to Reset */\n    }\n}"
+      },
+      {
+        "index": 38,
+        "language": "unknown",
+        "preview": "html {\n    font-size: 14px;\n}"
+      }
+    ],
+    "tables": [],
+    "lists": [
+      {
+        "type": "ul",
+        "itemCount": 9,
+        "sampleItems": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 4,
+        "sampleItems": [
+          "v20",
+          "v19",
+          "v18",
+          "v17"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 14,
+        "sampleItems": [
+          "Getting StartedInstallationConfigurationPlayground",
+          "Theming",
+          "ComponentsFormAutoCompleteCascadeSelectCheckboxColorPickerDatePickerEditorFloatLabelIconFieldIftaLab",
+          "IconsPrime IconsCustom Icons",
+          "Pass ThroughNEW"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Installation",
+          "Configuration",
+          "Playground"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 12,
+        "sampleItems": [
+          "FormAutoCompleteCascadeSelectCheckboxColorPickerDatePickerEditorFloatLabelIconFieldIftaLabelInputGro",
+          "ButtonButtonSpeedDialSplitButton",
+          "DataDataViewOrderListOrgChartPaginatorPickListTableTimelineTreeTreeTableVirtualScroller",
+          "PanelAccordionCardDividerFieldsetPanelScrollPanelSplitterStepperTabsToolbar",
+          "OverlayConfirmDialogConfirmPopupDialogDrawerDynamicDialogPopoverTooltip"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 28,
+        "sampleItems": [
+          "AutoComplete",
+          "CascadeSelect",
+          "Checkbox",
+          "ColorPicker",
+          "DatePicker"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Button",
+          "SpeedDial",
+          "SplitButton"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 10,
+        "sampleItems": [
+          "DataView",
+          "OrderList",
+          "OrgChart",
+          "Paginator",
+          "PickList"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 10,
+        "sampleItems": [
+          "Accordion",
+          "Card",
+          "Divider",
+          "Fieldset",
+          "Panel"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 7,
+        "sampleItems": [
+          "ConfirmDialog",
+          "ConfirmPopup",
+          "Dialog",
+          "Drawer",
+          "DynamicDialog"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "Upload"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 8,
+        "sampleItems": [
+          "Breadcrumb",
+          "ContextMenu",
+          "Dock",
+          "Menu",
+          "Menubar"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "Chart.js"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Message",
+          "Toast"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Carousel",
+          "Galleria",
+          "Image",
+          "ImageCompare"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 20,
+        "sampleItems": [
+          "AnimateOnScroll",
+          "AutoFocus",
+          "Avatar",
+          "Badge",
+          "BindNEW"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "FilterService"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Prime Icons",
+          "Custom Icons"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Overview",
+          "Guide"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Overview",
+          "Guide",
+          "CI Pipeline"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Accessibility",
+          "PrimeFlex",
+          "PrimeTV",
+          "RTL"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Updating to v20",
+          "Updating to v19"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Discord Server",
+          "Forum",
+          "Long Term Support",
+          "PRO Support"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 9,
+        "sampleItems": [
+          "About Us",
+          "Roadmap",
+          "Source Code",
+          "Changelog",
+          "Contribution"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 1,
+        "sampleItems": [
+          "THEMING"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 22,
+        "sampleItems": [
+          "emerald50100200300400500600700800900950",
+          "green50100200300400500600700800900950",
+          "lime50100200300400500600700800900950",
+          "red50100200300400500600700800900950",
+          "orange50100200300400500600700800900950"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 3,
+        "sampleItems": [
+          "Check how tokens are defined in the preset before customizing from the source.",
+          "Always maintain the same structure (direct value or colorScheme) as the original preset.",
+          "Consider both light and dark mode values when overriding scheme-dependent tokens."
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 11,
+        "sampleItems": [
+          "Architecture",
+          "Configuration API Theme  Options",
+          "Presets",
+          "Reserved Keys",
+          "Colors"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 2,
+        "sampleItems": [
+          "Theme",
+          "Options"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 10,
+        "sampleItems": [
+          "definePreset",
+          "Color Scheme",
+          "Primary",
+          "Surface",
+          "Noir"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 6,
+        "sampleItems": [
+          "usePreset",
+          "updatePreset",
+          "updatePrimaryPalette",
+          "updateSurfacePalette",
+          "$dt"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 2,
+        "sampleItems": [
+          "Specificity",
+          "Reset"
+        ]
+      }
+    ],
+    "mainContentLength": 24493,
+    "mainContentPreview": "ThemingChoose from a variety of pre-styled themes or develop your own. Architecture # PrimeNG is a design agnostic library so unlike some other UI libraries it does not enforce a certain styling such as material design. Styling is decoupled from the components using the themes instead. A theme consists of two parts; base and preset. The base is the style rules with CSS variables as placeholders whereas the preset is a set of design tokens to feed a base by mapping the tokens to CSS variables. A "
+  },
+  "icons": {
+    "pageName": "icons",
+    "url": "https://primeng.org/icons",
+    "title": "PrimeNG",
+    "metaDescription": "PrimeIcons is the default icon library of PrimeNG with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeNG components can use any icon with templating.",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Icons"
+      },
+      {
+        "level": "h2",
+        "text": "Download #"
+      },
+      {
+        "level": "h2",
+        "text": "Import #"
+      },
+      {
+        "level": "h2",
+        "text": "Figma #"
+      },
+      {
+        "level": "h2",
+        "text": "Basic #"
+      },
+      {
+        "level": "h2",
+        "text": "Size #"
+      },
+      {
+        "level": "h2",
+        "text": "Color #"
+      },
+      {
+        "level": "h2",
+        "text": "Spin #"
+      },
+      {
+        "level": "h2",
+        "text": "Constants #"
+      },
+      {
+        "level": "h2",
+        "text": "List #"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Download #",
+        "contentPreview": "Download #PrimeIcons is available at npm, run the following command to download it to your project.\nnpm install primeicons..."
+      },
+      {
+        "title": "Import #",
+        "contentPreview": "Import #CSS file of the icon library needs to be imported in styles.scss of your application.\n@import \"primeicons/primeicons.css\";..."
+      },
+      {
+        "title": "Figma #",
+        "contentPreview": "Figma # PrimeIcons library is now available on Figma Community. By adding them as a library, you can easily use these icons in your designs...."
+      },
+      {
+        "title": "Basic #",
+        "contentPreview": "Basic #PrimeIcons use the pi pi-{icon} syntax such as pi pi-check. A standalone icon can be displayed using an element such as i or span\n<i class=\"pi pi-check\"></i>\n<i class=\"pi pi-times\"></i>\n<span c..."
+      },
+      {
+        "title": "Size #",
+        "contentPreview": "Size #Size of an icon is controlled with the font-size property of the element.\n<i class=\"pi pi-check\" style=\"font-size: 1rem\"></i>\n<i class=\"pi pi-times\" style=\"font-size: 1.5rem\"></i>\n<i class=\"pi p..."
+      },
+      {
+        "title": "Color #",
+        "contentPreview": "Color #Icon color is defined with the color property which is inherited from parent by default.\n<i class=\"pi pi-check\" style=\"color: slateblue\"></i>\n<i class=\"pi pi-times\" style=\"color: green\"></i>\n<i..."
+      },
+      {
+        "title": "Spin #",
+        "contentPreview": "Spin #Special pi-spin class applies infinite rotation to an icon.\n<i class=\"pi pi-spin pi-spinner\" style=\"font-size: 2rem\"></i>\n<i class=\"pi pi-spin pi-cog\" style=\"font-size: 2rem\"></i>..."
+      },
+      {
+        "title": "Constants #",
+        "contentPreview": "Constants #Constants API is available to reference icons easily when used programmatically.NewDelete\n\nimport { Component } from '@angular/core';\nimport { PrimeIcons, MenuItem } from 'primeng/api';\n\n@C..."
+      },
+      {
+        "title": "List #",
+        "contentPreview": "List # Here is the full list of PrimeIcons. More icons will be added periodically and you may also request new icons at the issue tracker. pi-address-bookpi-align-centerpi-align-justifypi-align-leftpi..."
+      }
+    ],
+    "codeBlocks": [
+      {
+        "index": 0,
+        "language": "unknown",
+        "preview": "npm install primeicons"
+      },
+      {
+        "index": 1,
+        "language": "unknown",
+        "preview": "@import \"primeicons/primeicons.css\";"
+      },
+      {
+        "index": 2,
+        "language": "unknown",
+        "preview": "<i class=\"pi pi-check\"></i>\n<i class=\"pi pi-times\"></i>\n<span class=\"pi pi-search\"></span>\n<span class=\"pi pi-user\"></span>"
+      },
+      {
+        "index": 3,
+        "language": "unknown",
+        "preview": "<i class=\"pi pi-check\" style=\"font-size: 1rem\"></i>\n<i class=\"pi pi-times\" style=\"font-size: 1.5rem\"></i>\n<i class=\"pi pi-search\" style=\"font-size: 2r..."
+      },
+      {
+        "index": 4,
+        "language": "unknown",
+        "preview": "<i class=\"pi pi-check\" style=\"color: slateblue\"></i>\n<i class=\"pi pi-times\" style=\"color: green\"></i>\n<i class=\"pi pi-search\" style=\"color: var(--prim..."
+      },
+      {
+        "index": 5,
+        "language": "unknown",
+        "preview": "<i class=\"pi pi-spin pi-spinner\" style=\"font-size: 2rem\"></i>\n<i class=\"pi pi-spin pi-cog\" style=\"font-size: 2rem\"></i>"
+      }
+    ],
+    "tables": [],
+    "lists": [
+      {
+        "type": "ul",
+        "itemCount": 9,
+        "sampleItems": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 4,
+        "sampleItems": [
+          "v20",
+          "v19",
+          "v18",
+          "v17"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 14,
+        "sampleItems": [
+          "Getting StartedInstallationConfigurationPlayground",
+          "Theming",
+          "ComponentsFormAutoCompleteCascadeSelectCheckboxColorPickerDatePickerEditorFloatLabelIconFieldIftaLab",
+          "IconsPrime IconsCustom Icons",
+          "Pass ThroughNEW"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Installation",
+          "Configuration",
+          "Playground"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 12,
+        "sampleItems": [
+          "FormAutoCompleteCascadeSelectCheckboxColorPickerDatePickerEditorFloatLabelIconFieldIftaLabelInputGro",
+          "ButtonButtonSpeedDialSplitButton",
+          "DataDataViewOrderListOrgChartPaginatorPickListTableTimelineTreeTreeTableVirtualScroller",
+          "PanelAccordionCardDividerFieldsetPanelScrollPanelSplitterStepperTabsToolbar",
+          "OverlayConfirmDialogConfirmPopupDialogDrawerDynamicDialogPopoverTooltip"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 28,
+        "sampleItems": [
+          "AutoComplete",
+          "CascadeSelect",
+          "Checkbox",
+          "ColorPicker",
+          "DatePicker"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Button",
+          "SpeedDial",
+          "SplitButton"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 10,
+        "sampleItems": [
+          "DataView",
+          "OrderList",
+          "OrgChart",
+          "Paginator",
+          "PickList"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 10,
+        "sampleItems": [
+          "Accordion",
+          "Card",
+          "Divider",
+          "Fieldset",
+          "Panel"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 7,
+        "sampleItems": [
+          "ConfirmDialog",
+          "ConfirmPopup",
+          "Dialog",
+          "Drawer",
+          "DynamicDialog"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "Upload"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 8,
+        "sampleItems": [
+          "Breadcrumb",
+          "ContextMenu",
+          "Dock",
+          "Menu",
+          "Menubar"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "Chart.js"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Message",
+          "Toast"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Carousel",
+          "Galleria",
+          "Image",
+          "ImageCompare"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 20,
+        "sampleItems": [
+          "AnimateOnScroll",
+          "AutoFocus",
+          "Avatar",
+          "Badge",
+          "BindNEW"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "FilterService"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Prime Icons",
+          "Custom Icons"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Overview",
+          "Guide"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Overview",
+          "Guide",
+          "CI Pipeline"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Accessibility",
+          "PrimeFlex",
+          "PrimeTV",
+          "RTL"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Updating to v20",
+          "Updating to v19"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Discord Server",
+          "Forum",
+          "Long Term Support",
+          "PRO Support"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 9,
+        "sampleItems": [
+          "About Us",
+          "Roadmap",
+          "Source Code",
+          "Changelog",
+          "Contribution"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 1,
+        "sampleItems": [
+          "THEMING"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 2,
+        "sampleItems": [
+          "New",
+          "Delete"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 9,
+        "sampleItems": [
+          "Download",
+          "Import",
+          "Figma",
+          "Basic",
+          "Size"
+        ]
+      }
+    ],
+    "mainContentLength": 6316,
+    "mainContentPreview": "IconsPrimeIcons is the default icon library of PrimeNG with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeNG components can use any icon with templating. Download #PrimeIcons is available at npm, run the following command to download it to your project.\nnpm install primeicons\n\n Import #CSS file of the icon library needs to be imported in styles.scss of your application.\n@import \"primeicons/primeicons.css\";\n\n Figma # PrimeIcons library is now available o"
+  },
+  "tailwind": {
+    "pageName": "tailwind",
+    "url": "https://primeng.org/tailwind",
+    "title": "Tailwind CSS - PrimeNG",
+    "metaDescription": "Integration between PrimeNG and Tailwind CSS.",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Tailwind CSS"
+      },
+      {
+        "level": "h2",
+        "text": "Overview #"
+      },
+      {
+        "level": "h2",
+        "text": "Plugin #"
+      },
+      {
+        "level": "h3",
+        "text": "Tailwind v4"
+      },
+      {
+        "level": "h3",
+        "text": "Tailwind v3"
+      },
+      {
+        "level": "h2",
+        "text": "Extensions #"
+      },
+      {
+        "level": "h3",
+        "text": "Color Palette"
+      },
+      {
+        "level": "h2",
+        "text": "Dark Mode #"
+      },
+      {
+        "level": "h3",
+        "text": "Tailwind v4"
+      },
+      {
+        "level": "h3",
+        "text": "Tailwind v3"
+      },
+      {
+        "level": "h2",
+        "text": "Override #"
+      },
+      {
+        "level": "h3",
+        "text": "Important"
+      },
+      {
+        "level": "h3",
+        "text": "CSS Layer"
+      },
+      {
+        "level": "h2",
+        "text": "Samples #"
+      },
+      {
+        "level": "h3",
+        "text": "Color Palette #"
+      },
+      {
+        "level": "h3",
+        "text": "Form #"
+      },
+      {
+        "level": "h3",
+        "text": "Headless #"
+      },
+      {
+        "level": "h3",
+        "text": "Animations #"
+      },
+      {
+        "level": "h3",
+        "text": "Enter and Leave"
+      },
+      {
+        "level": "h3",
+        "text": "Animations"
+      },
+      {
+        "level": "h3",
+        "text": "Animation Duration"
+      },
+      {
+        "level": "h3",
+        "text": "Animation Delay"
+      },
+      {
+        "level": "h3",
+        "text": "Iteration Count"
+      },
+      {
+        "level": "h3",
+        "text": "Direction"
+      },
+      {
+        "level": "h3",
+        "text": "Timing Function"
+      },
+      {
+        "level": "h3",
+        "text": "Fill Mode"
+      },
+      {
+        "level": "h3",
+        "text": "Play State"
+      },
+      {
+        "level": "h3",
+        "text": "Backface Visibility State"
+      },
+      {
+        "level": "h3",
+        "text": "Fade In and Out"
+      },
+      {
+        "level": "h3",
+        "text": "Zoom In and Out"
+      },
+      {
+        "level": "h3",
+        "text": "Spin In and Out"
+      },
+      {
+        "level": "h3",
+        "text": "Slide In and Out"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Overview #",
+        "contentPreview": "Overview # Tailwind CSS is a popular CSS framework based on a utility-first design. The core provides flexible CSS classes with predefined CSS rules to build your own UI elements. For example, instead..."
+      },
+      {
+        "title": "Plugin #",
+        "contentPreview": "Plugin # The tailwindcss-primeui is an official plugin by PrimeTek to provide first class integration between a Prime UI library like PrimeNG and Tailwind CSS. It is designed to work both in styled an..."
+      },
+      {
+        "title": "Extensions #",
+        "contentPreview": "Extensions #The plugin extends the default configuration with a new set of utilities whose values are derived from the PrimeNG theme in use. All variants and breakpoints are supported e.g. dark:sm:hov..."
+      },
+      {
+        "title": "Dark Mode #",
+        "contentPreview": "Dark Mode # In styled mode, PrimeNG uses the system as the default darkModeSelector in theme configuration. If you have a dark mode switch in your application, ensure that darkModeSelector is aligned ..."
+      },
+      {
+        "title": "Override #",
+        "contentPreview": "Override #Tailwind utilities may not be able to override the default styling of components due to css specificity, there are two possible solutions; Import and CSS Layer.ImportantUse the ! as a prefix..."
+      },
+      {
+        "title": "Samples #",
+        "contentPreview": "Samples #Example uses cases with PrimeNG and Tailwind CSS. Color Palette #PrimeNG color palette as utility classes.primary050100200300400500600700800900950surface050100200300400500600700800900950prima..."
+      }
+    ],
+    "codeBlocks": [
+      {
+        "index": 0,
+        "language": "unknown",
+        "preview": "npm i tailwindcss-primeui"
+      },
+      {
+        "index": 1,
+        "language": "unknown",
+        "preview": "@import \"tailwindcss\";\n@import \"tailwindcss-primeui\";"
+      },
+      {
+        "index": 2,
+        "language": "unknown",
+        "preview": "// tailwind.config.js\nimport PrimeUI from 'tailwindcss-primeui';\n\nexport default {\n    // ...\n    plugins: [PrimeUI]\n};"
+      },
+      {
+        "index": 3,
+        "language": "unknown",
+        "preview": "providePrimeNG({\n    theme: {\n        preset: Aura,\n        options: {\n            darkModeSelector: '.my-app-dark'\n        }\n    }\n})"
+      },
+      {
+        "index": 4,
+        "language": "unknown",
+        "preview": "@import \"tailwindcss\";\n@import \"tailwindcss-primeui\";\n@custom-variant dark (&:where(.my-app-dark, .my-app-dark *));     //dark mode configuration"
+      },
+      {
+        "index": 5,
+        "language": "unknown",
+        "preview": "// tailwind.config.js\nimport PrimeUI from 'tailwindcss-primeui';\n\nexport default {\n    darkMode: ['selector', '[class~=\"my-app-dark\"]'],           //d..."
+      },
+      {
+        "index": 6,
+        "language": "unknown",
+        "preview": "<input pInputText placeholder=\"Overriden\" class=\"p-8!\" />"
+      },
+      {
+        "index": 7,
+        "language": "unknown",
+        "preview": "<input pInputText placeholder=\"Overriden\" class=\"!p-8\" />"
+      },
+      {
+        "index": 8,
+        "language": "unknown",
+        "preview": "providePrimeNG({\n    theme: {\n        preset: Aura,\n        options: {\n            cssLayer: {\n                name: 'primeng',\n                order:..."
+      },
+      {
+        "index": 9,
+        "language": "unknown",
+        "preview": "@import \"tailwindcss\";\n@import \"tailwindcss-primeui\";"
+      },
+      {
+        "index": 10,
+        "language": "unknown",
+        "preview": "providePrimeNG({\n    theme: {\n        preset: Aura,\n        options: {\n            cssLayer: {\n                name: 'primeng',\n                order:..."
+      },
+      {
+        "index": 11,
+        "language": "unknown",
+        "preview": "@layer tailwind-base, primeng, tailwind-utilities;\n\n@layer tailwind-base {\n  @tailwind base;\n}\n\n@layer tailwind-utilities {\n  @tailwind components;\n  ..."
+      },
+      {
+        "index": 14,
+        "language": "unknown",
+        "preview": "<p-select [(ngModel)]=\"animation\" [options]=\"animations\" placeholder=\"Select One\" class=\"w-full sm:w-44\" />\n<div class=\"py-8 overflow-hidden\">\n   <div..."
+      }
+    ],
+    "tables": [
+      {
+        "index": 0,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "primary-[50-950]",
+            "Primary color palette."
+          ],
+          [
+            "surface-[0-950]",
+            "Surface color palette."
+          ],
+          [
+            "primary",
+            "Default primary color."
+          ]
+        ],
+        "totalRows": 14
+      },
+      {
+        "index": 1,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "animate-enter",
+            "animation-name: enter; --p-enter-opacity: initial;"
+          ],
+          [
+            "animate-leave",
+            "animation-name: leave; --p-leave-opacity: initial;"
+          ],
+          [
+            "animate-leave",
+            "fadein 0.15s linear"
+          ]
+        ],
+        "totalRows": 26
+      },
+      {
+        "index": 2,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "animate-duration-0",
+            "animation-duration: 0s"
+          ],
+          [
+            "animate-duration-75",
+            "animation-duration: 75ms"
+          ],
+          [
+            "animate-duration-100",
+            "animation-duration: 100ms"
+          ]
+        ],
+        "totalRows": 12
+      },
+      {
+        "index": 3,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "animate-delay-none",
+            "animation-duration: 0s"
+          ],
+          [
+            "animate-delay-75",
+            "animation-delay: 75ms"
+          ],
+          [
+            "animate-delay-100",
+            "animation-delay: 100ms"
+          ]
+        ],
+        "totalRows": 10
+      },
+      {
+        "index": 4,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "animate-infinite",
+            "animation-iteration-count: infinite"
+          ],
+          [
+            "animate-once",
+            "animation-iteration-count: 1"
+          ],
+          [
+            "animate-twice",
+            "animation-iteration-count: 2"
+          ]
+        ],
+        "totalRows": 3
+      },
+      {
+        "index": 5,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "animate-normal",
+            "animation-direction: normal"
+          ],
+          [
+            "animate-reverse",
+            "animation-direction: reverse"
+          ],
+          [
+            "animate-alternate",
+            "animation-direction: alternate"
+          ]
+        ],
+        "totalRows": 4
+      },
+      {
+        "index": 6,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "animate-ease-linear",
+            "animation-timing-function: linear"
+          ],
+          [
+            "animate-ease-in",
+            "animation-timing-function: cubic-bezier(0.4, 0, 1,"
+          ],
+          [
+            "animate-ease-out",
+            "animation-timing-function: cubic-bezier(0, 0, 0.2,"
+          ]
+        ],
+        "totalRows": 4
+      },
+      {
+        "index": 7,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "animate-fill-none",
+            "animation-fill-mode: normal"
+          ],
+          [
+            "animate-fill-forwards",
+            "animation-fill-mode: forwards"
+          ],
+          [
+            "animate-fill-backwards",
+            "animation-fill-mode: backwards"
+          ]
+        ],
+        "totalRows": 4
+      },
+      {
+        "index": 8,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "animate-running",
+            "animation-play-state: running"
+          ],
+          [
+            "animate-paused",
+            "animation-play-state: paused"
+          ]
+        ],
+        "totalRows": 2
+      },
+      {
+        "index": 9,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "backface-visible",
+            "backface-visibility: visible"
+          ],
+          [
+            "backface-hidden",
+            "backface-visibility: hidden"
+          ]
+        ],
+        "totalRows": 2
+      },
+      {
+        "index": 10,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "fade-in-{value}",
+            "--p-enter-opacity: {value}"
+          ],
+          [
+            "fade-out-{value}",
+            "--p-leave-opacity: {value}"
+          ]
+        ],
+        "totalRows": 2
+      },
+      {
+        "index": 11,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "zoom-in-{value}",
+            "--p-enter-scale: {value}"
+          ],
+          [
+            "zoom-out-{value}",
+            "--p-leave-scale: {value}"
+          ]
+        ],
+        "totalRows": 2
+      },
+      {
+        "index": 12,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "spin-in-{value}",
+            "--p-enter-rotate: {value}"
+          ],
+          [
+            "spin-out-{value}",
+            "--p-leave-rotate: {value}"
+          ]
+        ],
+        "totalRows": 2
+      },
+      {
+        "index": 13,
+        "headers": [
+          "Class",
+          "Property"
+        ],
+        "sampleRows": [
+          [
+            "slide-in-from-t-{value}",
+            "--p-enter-translate-y: -{value}"
+          ],
+          [
+            "slide-in-from-b-{value}",
+            "--p-enter-translate-y: {value}"
+          ],
+          [
+            "slide-in-from-l-{value}",
+            "--p-enter-translate-x: -{value}"
+          ]
+        ],
+        "totalRows": 8
+      }
+    ],
+    "lists": [
+      {
+        "type": "ul",
+        "itemCount": 9,
+        "sampleItems": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 4,
+        "sampleItems": [
+          "v20",
+          "v19",
+          "v18",
+          "v17"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 14,
+        "sampleItems": [
+          "Getting StartedInstallationConfigurationPlayground",
+          "Theming",
+          "ComponentsFormAutoCompleteCascadeSelectCheckboxColorPickerDatePickerEditorFloatLabelIconFieldIftaLab",
+          "IconsPrime IconsCustom Icons",
+          "Pass ThroughNEW"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Installation",
+          "Configuration",
+          "Playground"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 12,
+        "sampleItems": [
+          "FormAutoCompleteCascadeSelectCheckboxColorPickerDatePickerEditorFloatLabelIconFieldIftaLabelInputGro",
+          "ButtonButtonSpeedDialSplitButton",
+          "DataDataViewOrderListOrgChartPaginatorPickListTableTimelineTreeTreeTableVirtualScroller",
+          "PanelAccordionCardDividerFieldsetPanelScrollPanelSplitterStepperTabsToolbar",
+          "OverlayConfirmDialogConfirmPopupDialogDrawerDynamicDialogPopoverTooltip"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 28,
+        "sampleItems": [
+          "AutoComplete",
+          "CascadeSelect",
+          "Checkbox",
+          "ColorPicker",
+          "DatePicker"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Button",
+          "SpeedDial",
+          "SplitButton"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 10,
+        "sampleItems": [
+          "DataView",
+          "OrderList",
+          "OrgChart",
+          "Paginator",
+          "PickList"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 10,
+        "sampleItems": [
+          "Accordion",
+          "Card",
+          "Divider",
+          "Fieldset",
+          "Panel"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 7,
+        "sampleItems": [
+          "ConfirmDialog",
+          "ConfirmPopup",
+          "Dialog",
+          "Drawer",
+          "DynamicDialog"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "Upload"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 8,
+        "sampleItems": [
+          "Breadcrumb",
+          "ContextMenu",
+          "Dock",
+          "Menu",
+          "Menubar"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "Chart.js"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Message",
+          "Toast"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Carousel",
+          "Galleria",
+          "Image",
+          "ImageCompare"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 20,
+        "sampleItems": [
+          "AnimateOnScroll",
+          "AutoFocus",
+          "Avatar",
+          "Badge",
+          "BindNEW"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 1,
+        "sampleItems": [
+          "FilterService"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Prime Icons",
+          "Custom Icons"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Overview",
+          "Guide"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 3,
+        "sampleItems": [
+          "Overview",
+          "Guide",
+          "CI Pipeline"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Accessibility",
+          "PrimeFlex",
+          "PrimeTV",
+          "RTL"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 2,
+        "sampleItems": [
+          "Updating to v20",
+          "Updating to v19"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 4,
+        "sampleItems": [
+          "Discord Server",
+          "Forum",
+          "Long Term Support",
+          "PRO Support"
+        ]
+      },
+      {
+        "type": "ol",
+        "itemCount": 9,
+        "sampleItems": [
+          "About Us",
+          "Roadmap",
+          "Source Code",
+          "Changelog",
+          "Contribution"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 1,
+        "sampleItems": [
+          "THEMING"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 2,
+        "sampleItems": [
+          "primary050100200300400500600700800900950",
+          "surface050100200300400500600700800900950"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 6,
+        "sampleItems": [
+          "Overview",
+          "Plugin",
+          "Extensions",
+          "Dark Mode",
+          "Override"
+        ]
+      },
+      {
+        "type": "ul",
+        "itemCount": 4,
+        "sampleItems": [
+          "Color Palette",
+          "Form",
+          "Headless",
+          "Animations"
+        ]
+      }
+    ],
+    "mainContentLength": 19581,
+    "mainContentPreview": "Tailwind CSSIntegration between PrimeNG and Tailwind CSS. Overview # Tailwind CSS is a popular CSS framework based on a utility-first design. The core provides flexible CSS classes with predefined CSS rules to build your own UI elements. For example, instead of an opinionated btn class as in Bootstrap, Tailwind offers primitive classes like bg-blue-500, rounded and p-4 to apply a button.  Tailwind is an outstanding CSS library, however it lacks a true comprehensive UI suite when combined with An"
+  }
+}
