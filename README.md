@@ -2,6 +2,10 @@
 
 Servidor MCP (Model Context Protocol) para acceder a la documentación de componentes PrimeNG y generar código.
 
+<a href="https://glama.ai/mcp/servers/@hnkatze/PrimeNG_MCP">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@hnkatze/PrimeNG_MCP/badge" alt="PrimeNG Server MCP server" />
+</a>
+
 ## Características
 
 - 📚 Documentación completa de componentes PrimeNG
