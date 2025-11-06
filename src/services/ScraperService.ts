@@ -13,7 +13,8 @@ import {
   extractEvents,
   extractMethods,
   extractDescription,
-  extractBasicUsage
+  extractBasicUsage,
+  extractAllExamples
 } from '../utils/parsers.js';
 import { capitalizeComponentName } from '../utils/formatters.js';
 import {
@@ -106,6 +107,7 @@ export class ScraperService {
           // Extract component information
           const description = extractDescription($, componentName);
           const basicUsage = extractBasicUsage($, componentName, this.getBasicUsageFallback(componentName));
+          const examples = extractAllExamples($);
 
           const doc: ComponentDoc = {
             name: componentName,
@@ -113,6 +115,7 @@ export class ScraperService {
             importStatement: `import { ${capitalizeComponentName(componentName)} } from 'primeng/${componentName}';`,
             moduleImport: `import { ${capitalizeComponentName(componentName)}Module } from 'primeng/${componentName}';`,
             basicUsage,
+            examples: examples.length > 0 ? examples : undefined,
             properties: extractProperties($),
             events: extractEvents($),
             methods: extractMethods($)
@@ -121,7 +124,8 @@ export class ScraperService {
           logger.info(`Successfully scraped documentation for ${componentName}`, {
             properties: doc.properties?.length || 0,
             events: doc.events?.length || 0,
-            methods: doc.methods?.length || 0
+            methods: doc.methods?.length || 0,
+            examples: doc.examples?.length || 0
           });
 
           return doc;

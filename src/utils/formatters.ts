@@ -13,6 +13,17 @@ export function formatComponentDoc(doc: ComponentDoc): string {
   text += `## Import\n\`\`\`typescript\n${doc.importStatement}\n${doc.moduleImport}\n\`\`\`\n\n`;
   text += `## Uso Básico\n\`\`\`html\n${doc.basicUsage}\n\`\`\`\n\n`;
 
+  // Additional Examples
+  if (doc.examples && doc.examples.length > 1) {
+    text += `## Ejemplos Adicionales\n\n`;
+    // Skip first example if it's the same as basicUsage
+    const additionalExamples = doc.examples.slice(1);
+    additionalExamples.forEach((example, index) => {
+      const lang = detectCodeLanguage(example);
+      text += `### Ejemplo ${index + 2}\n\`\`\`${lang}\n${example}\n\`\`\`\n\n`;
+    });
+  }
+
   // Properties
   if (doc.properties && doc.properties.length > 0) {
     text += `## Properties\n\n`;
@@ -20,8 +31,7 @@ export function formatComponentDoc(doc: ComponentDoc): string {
     text += `|------|------|---------|-------------|\n`;
     doc.properties.forEach(prop => {
       const defaultVal = prop.default ? prop.default : '-';
-      const desc = prop.description.substring(0, 100);
-      text += `| ${prop.name} | ${prop.type} | ${defaultVal} | ${desc} |\n`;
+      text += `| ${prop.name} | ${prop.type} | ${defaultVal} | ${prop.description} |\n`;
     });
     text += `\n`;
   }
@@ -32,9 +42,7 @@ export function formatComponentDoc(doc: ComponentDoc): string {
     text += `| Name | Parameters | Description |\n`;
     text += `|------|------------|-------------|\n`;
     doc.events.forEach(event => {
-      const params = event.parameters.substring(0, 80);
-      const desc = event.description.substring(0, 100);
-      text += `| ${event.name} | ${params} | ${desc} |\n`;
+      text += `| ${event.name} | ${event.parameters} | ${event.description} |\n`;
     });
     text += `\n`;
   }
@@ -45,9 +53,7 @@ export function formatComponentDoc(doc: ComponentDoc): string {
     text += `| Name | Parameters | Description |\n`;
     text += `|------|------------|-------------|\n`;
     doc.methods.forEach(method => {
-      const params = method.parameters.substring(0, 80);
-      const desc = method.description.substring(0, 100);
-      text += `| ${method.name} | ${params} | ${desc} |\n`;
+      text += `| ${method.name} | ${method.parameters} | ${method.description} |\n`;
     });
     text += `\n`;
   }

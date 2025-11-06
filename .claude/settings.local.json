@@ -13,7 +13,8 @@
       "Bash(node scripts/test-tools-list.mjs:*)",
       "Bash(node scripts/test-guide-parsing.mjs:*)",
       "Bash(node scripts/test-dom-structure.mjs:*)",
-      "Bash(node scripts/test-section-content.mjs:*)"
+      "Bash(node scripts/test-section-content.mjs:*)",
+      "Bash(del:*)"
     ],
     "deny": [],
     "ask": []

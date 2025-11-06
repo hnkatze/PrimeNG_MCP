@@ -39,6 +39,7 @@ export interface ComponentDoc {
   importStatement: string;
   moduleImport: string;
   basicUsage: string;
+  examples?: string[];
   properties?: ComponentProperty[];
   events?: ComponentEvent[];
   methods?: ComponentMethod[];

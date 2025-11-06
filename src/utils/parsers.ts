@@ -44,7 +44,7 @@ export function extractProperties($: cheerio.CheerioAPI): ComponentProperty[] {
     }
   });
 
-  return properties.slice(0, 20); // Limit to 20 properties
+  return properties;
 }
 
 /**
@@ -84,7 +84,7 @@ export function extractEvents($: cheerio.CheerioAPI): ComponentEvent[] {
     }
   });
 
-  return events.slice(0, 15); // Limit to 15 events
+  return events;
 }
 
 /**
@@ -125,7 +125,7 @@ export function extractMethods($: cheerio.CheerioAPI): ComponentMethod[] {
     }
   });
 
-  return methods.slice(0, 10); // Limit to 10 methods
+  return methods;
 }
 
 /**
@@ -145,6 +145,28 @@ export function extractBasicUsage($: cheerio.CheerioAPI, component: string, fall
     return firstCodeBlock;
   }
   return fallback;
+}
+
+/**
+ * Extracts all code examples from the page
+ */
+export function extractAllExamples($: cheerio.CheerioAPI): string[] {
+  const examples: string[] = [];
+
+  $('pre code').each((_i, code) => {
+    const text = $(code).text().trim();
+    // Filter meaningful code blocks:
+    // - At least 10 characters
+    // - Not too long (avoid full file dumps)
+    // - Contains typical code markers
+    if (text.length > 10 &&
+        text.length < 1000 &&
+        (text.includes('<') || text.includes('import') || text.includes('{') || text.includes('('))) {
+      examples.push(text);
+    }
+  });
+
+  return examples;
 }
 
 /**
