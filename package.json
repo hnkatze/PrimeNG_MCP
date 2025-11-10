@@ -1,7 +1,7 @@
 {
   "name": "primeng-mcp-server",
-  "version": "1.0.0",
-  "description": "MCP Server for PrimeNG documentation and components",
+  "version": "2.0.0",
+  "description": "MCP Server for PrimeNG documentation and components - Scrapes and provides access to PrimeNG component docs, examples, and code generation",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
@@ -19,12 +19,25 @@
   },
   "keywords": [
     "mcp",
+    "model-context-protocol",
     "primeng",
     "documentation",
-    "angular"
+    "angular",
+    "web-scraping",
+    "component-library",
+    "code-generation",
+    "claude"
   ],
-  "author": "",
+  "author": "PrimeNG MCP Server Contributors",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/primeng-mcp-server"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/primeng-mcp-server/issues"
+  },
+  "homepage": "https://github.com/yourusername/primeng-mcp-server#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "axios": "^1.7.9",

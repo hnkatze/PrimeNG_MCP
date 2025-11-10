@@ -1,14 +1,21 @@
 # PrimeNG MCP Server
 
-Servidor MCP (Model Context Protocol) para acceder a la documentación de componentes PrimeNG y generar código.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
+[![Node](https://img.shields.io/badge/Node-18+-green)](https://nodejs.org/)
 
-## Características
+Servidor MCP (Model Context Protocol) para acceder a la documentación de componentes PrimeNG y generar código Angular.
 
-- 📚 Documentación completa de componentes PrimeNG
-- 🔍 Búsqueda de componentes
-- 💻 Generación automática de código
-- 📝 Ejemplos prácticos de uso
-- ⚡ Cache de documentación para respuestas rápidas
+## ✨ Características
+
+- 📚 **Documentación completa** - Extrae properties, events, methods y descripciones
+- 🔍 **Búsqueda inteligente** - Encuentra componentes por nombre o categoría
+- 💻 **Generación de código** - Crea componentes Angular listos para usar
+- 📝 **Múltiples ejemplos** - Extrae todos los ejemplos de código de PrimeNG.org
+- ⚡ **Cache persistente** - Almacena documentación en disco con TTL configurable
+- 🌐 **Web scraping robusto** - Sistema de reintentos con exponential backoff
+- 🎨 **Syntax highlighting** - Auto-detección de lenguaje para formateo
+- 📖 **Guías de configuración** - Documentación de instalación, theming, iconos, etc.
 
 ## Instalación
 
@@ -99,15 +106,23 @@ Genera código para un botón con label "Guardar" y icono "pi pi-save"
 ```
 
 ### 5. `get_component_examples`
-Obtiene ejemplos prácticos de uso.
+Obtiene **todos los ejemplos** de código extraídos de la documentación oficial.
 
 **Parámetros:**
 - `component` (string): Nombre del componente
+
+**Mejoras (v2.0):**
+- ✨ Extrae todos los ejemplos del sitio web (no solo 1-3 hardcodeados)
+- ✨ Auto-detección de lenguaje (HTML, TypeScript, etc.)
+- ✨ Cache-first para respuestas rápidas
+- ✨ Fallback a ejemplos hardcodeados si falla el scraping
 
 **Ejemplo de uso:**
 ```
 Dame ejemplos de cómo usar el componente Table de PrimeNG
 ```
+
+**Resultado:** ~18 ejemplos para Button, ~7 para Dialog, etc.
 
 ## Componentes Soportados
 
@@ -133,62 +148,151 @@ El servidor incluye más de 70 componentes de PrimeNG:
 5. "Lista todos los componentes de entrada"
 ```
 
-## Arquitectura
+## 🏗️ Arquitectura (v2.0)
+
+El proyecto sigue una arquitectura modular y escalable:
 
 ```
 primeng-mcp-server/
 ├── src/
-│   └── index.ts          # Servidor MCP principal
-├── dist/                 # Código compilado
-├── package.json
-├── tsconfig.json
-└── README.md
+│   ├── index.ts              # Entry point
+│   ├── server/
+│   │   └── PrimeNGServer.ts  # Main server class
+│   ├── services/
+│   │   ├── ScraperService.ts       # Web scraping & HTML parsing
+│   │   ├── CacheService.ts         # Persistent cache with TTL
+│   │   ├── CodeGeneratorService.ts # Code generation
+│   │   └── DocsScraperService.ts   # Guide documentation scraping
+│   ├── tools/
+│   │   ├── BaseTool.ts             # Abstract base class
+│   │   ├── GetComponentDocTool.ts  # Tool: get_component_doc
+│   │   ├── SearchComponentsTool.ts # Tool: search_components
+│   │   ├── ListComponentsTool.ts   # Tool: list_all_components
+│   │   ├── GenerateCodeTool.ts     # Tool: generate_component_code
+│   │   ├── GetExamplesTool.ts      # Tool: get_component_examples
+│   │   └── Get*GuideTool.ts        # Guide tools (installation, theming, etc)
+│   ├── models/
+│   │   ├── ComponentDoc.ts   # Interfaces and types
+│   │   └── ToolSchemas.ts    # MCP tool schemas
+│   ├── utils/
+│   │   ├── logger.ts         # Structured logging
+│   │   ├── formatters.ts     # Output formatting
+│   │   ├── parsers.ts        # HTML parsing utilities
+│   │   ├── errors.ts         # Custom error classes
+│   │   └── retry.ts          # Retry with exponential backoff
+│   └── config/
+│       └── constants.ts      # Configuration
+├── tests/
+│   └── unit/                 # Unit tests
+├── dist/                     # Compiled JavaScript
+├── .cache/                   # Component cache (gitignored)
+└── docs/                     # Documentation (CLAUDE.md, CONTRIBUTING.md, etc)
 ```
 
-## Desarrollo
+## 💻 Desarrollo
 
-### Añadir nuevos componentes
+### Scripts Disponibles
 
-Edita el array `PRIMENG_COMPONENTS` en `src/index.ts`:
-
-```typescript
-const PRIMENG_COMPONENTS = [
-  "accordion", "button", "table", // ... más componentes
-];
+```bash
+npm run build         # Compile TypeScript
+npm run watch         # Compile with watch mode
+npm run dev           # Run with tsx (no compilation)
+npm start             # Run compiled version
+npm test              # Run tests
+npm run test:unit     # Run unit tests only
+npm run test:coverage # Run with coverage
+npm run lint          # Lint code
+npm run lint:fix      # Auto-fix lint issues
+npm run format        # Format with Prettier
 ```
 
-### Añadir ejemplos personalizados
+### Añadir un Nuevo Tool
 
-Modifica el método `getCommonExamples()` en `src/index.ts`:
+1. Crea el tool en `src/tools/MyNewTool.ts` extendiendo `BaseTool`
+2. Define el schema en `src/models/ToolSchemas.ts`
+3. Registra en `src/server/PrimeNGServer.ts`:
+   - Inicializa en `initializeTools()`
+   - Agrega case en el handler `CallToolRequestSchema`
+   - Agrega schema en `ListToolsRequestSchema`
 
+**Ejemplo:**
 ```typescript
-private getCommonExamples(component: string): string {
-  const examples: Record<string, string> = {
-    button: `...`,
-    table: `...`,
-    // Añade más aquí
-  };
-  // ...
+// src/tools/MyNewTool.ts
+import { BaseTool, ToolResponse } from './BaseTool.js';
+
+export class MyNewTool extends BaseTool {
+  constructor(dependencies) {
+    super('my_new_tool');
+  }
+
+  async execute(args: Record<string, any>): Promise<ToolResponse> {
+    // Tu lógica aquí
+    return this.createResponse(result);
+  }
 }
 ```
 
-## Mejoras Futuras
+### Modificar el Scraping
 
-- [ ] Scraping automático de la documentación oficial de PrimeNG
-- [ ] Cache persistente en disco
-- [ ] Soporte para temas y estilos
-- [ ] Validación de propiedades
+- **Lógica de scraping**: `src/services/ScraperService.ts`
+- **Parsers HTML**: `src/utils/parsers.ts`
+- **Formateo de salida**: `src/utils/formatters.ts`
+
+Ver [CLAUDE.md](CLAUDE.md) para documentación detallada de arquitectura.
+
+## 🎯 Mejoras Recientes (v2.0)
+
+- ✅ **Web scraping completo** - Extrae documentación real de PrimeNG.org
+- ✅ **Cache persistente** - Sistema de cache en `.cache/` con TTL de 24h
+- ✅ **Múltiples ejemplos** - Extrae TODOS los ejemplos (no solo el primero)
+- ✅ **Sin límites** - Elimina límites de 20 properties, 15 events, 10 methods
+- ✅ **Descripciones completas** - Sin truncamiento a 100 caracteres
+- ✅ **Arquitectura modular** - Separación en services, tools, utils
+- ✅ **Sistema de logging** - Logger estructurado con niveles
+- ✅ **Reintentos robustos** - Exponential backoff para web scraping
+- ✅ **Testing** - Framework Vitest configurado
+- ✅ **Code quality** - ESLint + Prettier
+
+## 🚧 Roadmap
+
+- [ ] Soporte para API documentation tabs en nueva estructura PrimeNG
+- [ ] Validación de propiedades con schemas
 - [ ] Generación de tests unitarios
 - [ ] Integración con PrimeNG CLI
-- [ ] Soporte para templates de componentes complejos
-- [ ] Generación de código TypeScript para lógica de componentes
+- [ ] Generación de código TypeScript para lógica
+- [ ] Soporte para temas y estilos customizados
+- [ ] CLI tool para testing local
 
-## Recursos
+## 🤝 Contribuir
+
+¡Las contribuciones son bienvenidas! Por favor lee [CONTRIBUTING.md](CONTRIBUTING.md) para detalles sobre:
+
+- Cómo reportar bugs
+- Cómo proponer nuevas características
+- Guías de estilo de código
+- Proceso de pull requests
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## 📚 Recursos
 
 - [Documentación de PrimeNG](https://primeng.org/)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 - [MCP SDK para Node.js](https://github.com/modelcontextprotocol/typescript-sdk)
+- [Claude Desktop](https://claude.ai/download)
 
-## Licencia
+## 👥 Autores
 
-MIT
+PrimeNG MCP Server Contributors
+
+## 🙏 Agradecimientos
+
+- PrimeNG team por su excelente biblioteca de componentes
+- Anthropic por el Model Context Protocol
+- Comunidad open source
+
+---
+
+**¿Preguntas o problemas?** Abre un [issue](https://github.com/yourusername/primeng-mcp-server/issues)

@@ -1,0 +1,65 @@
+[
+  [
+    "button",
+    {
+      "data": {
+        "name": "button",
+        "description": "Button is an extension to standard button element with icons and theming.",
+        "importStatement": "import { Button } from 'primeng/button';",
+        "moduleImport": "import { ButtonModule } from 'primeng/button';",
+        "basicUsage": "import { ButtonModule } from 'primeng/button';",
+        "examples": [
+          "import { ButtonModule } from 'primeng/button';",
+          "<p-button label=\"Submit\" />",
+          "<button pButton>\n    <i class=\"pi pi-check\" pButtonIcon></i>\n    <span pButtonLabel>Save</span>\n</button>",
+          "<p-button label=\"Link\" link />\n<a href=\"https://angular.dev/\" pButton target=\"_blank\" rel=\"noopener noreferrer\">\n    <span pButtonLabel>Angular Website</span>\n</a>\n<a routerLink=\"/\" pButton>\n    <span pButtonLabel>Router Link</span>\n</a>",
+          "<p-button icon=\"pi pi-home\" aria-label=\"Save\" />\n<p-button label=\"Profile\" icon=\"pi pi-user\" />\n<p-button label=\"Save\" icon=\"pi pi-check\" iconPos=\"right\" />\n<p-button label=\"Search\" icon=\"pi pi-search\" iconPos=\"top\" />\n<p-button label=\"Update\" icon=\"pi pi-refresh\" iconPos=\"bottom\" />",
+          "<p-button label=\"Search\" icon=\"pi pi-check\" [loading]=\"loading\" (onClick)=\"load()\" />",
+          "<p-button label=\"Primary\" />\n<p-button label=\"Secondary\" severity=\"secondary\" />\n<p-button label=\"Success\" severity=\"success\" />\n<p-button label=\"Info\" severity=\"info\" />\n<p-button label=\"Warn\" severity=\"warn\" />\n<p-button label=\"Help\" severity=\"help\" />\n<p-button label=\"Danger\" severity=\"danger\" />\n<p-button label=\"Contrast\" severity=\"contrast\" />",
+          "<p-button label=\"Submit\" [disabled]=\"true\" />",
+          "<p-button label=\"Primary\" [raised]=\"true\" />\n<p-button label=\"Secondary\" [raised]=\"true\" severity=\"secondary\" />\n<p-button label=\"Success\" [raised]=\"true\" severity=\"success\" />\n<p-button label=\"Info\" [raised]=\"true\" severity=\"info\" />\n<p-button label=\"Warn\" [raised]=\"true\" severity=\"warn\" />\n<p-button label=\"Help\" [raised]=\"true\" severity=\"help\" />\n<p-button label=\"Danger\" [raised]=\"true\" severity=\"danger\" />\n<p-button label=\"Contrast\" [raised]=\"true\" severity=\"contrast\" />",
+          "<p-button label=\"Primary\" [rounded]=\"true\" />\n<p-button label=\"Secondary\" [rounded]=\"true\" severity=\"secondary\" />\n<p-button label=\"Success\" [rounded]=\"true\" severity=\"success\" />\n<p-button label=\"Info\" [rounded]=\"true\" severity=\"info\" />\n<p-button label=\"Warn\" [rounded]=\"true\" severity=\"warn\" />\n<p-button label=\"Help\" [rounded]=\"true\" severity=\"help\" />\n<p-button label=\"Danger\" [rounded]=\"true\" severity=\"danger\" />\n<p-button label=\"Contrast\" [rounded]=\"true\" severity=\"contrast\" />",
+          "<p-button label=\"Primary\" variant=\"text\" />\n<p-button label=\"Secondary\" variant=\"text\" severity=\"secondary\" />\n<p-button label=\"Success\" variant=\"text\" severity=\"success\" />\n<p-button label=\"Info\" variant=\"text\" severity=\"info\" />\n<p-button label=\"Warn\" variant=\"text\" severity=\"warn\" />\n<p-button label=\"Help\" variant=\"text\" severity=\"help\" />\n<p-button label=\"Danger\" variant=\"text\" severity=\"danger\" />\n<p-button label=\"Plain\" variant=\"text\" />",
+          "<p-button label=\"Primary\" variant=\"text\" [raised]=\"true\" />\n<p-button label=\"Secondary\" variant=\"text\" [raised]=\"true\" severity=\"secondary\" />\n<p-button label=\"Success\" variant=\"text\" [raised]=\"true\" severity=\"success\" />\n<p-button label=\"Info\" variant=\"text\" [raised]=\"true\" severity=\"info\" />\n<p-button label=\"Warn\" variant=\"text\" [raised]=\"true\" severity=\"warn\" />\n<p-button label=\"Help\" variant=\"text\" [raised]=\"true\" severity=\"help\" />\n<p-button label=\"Danger\" variant=\"text\" [raised]=\"true\" severity=\"danger\" />\n<p-button label=\"Plain\" variant=\"text\" [raised]=\"true\" />",
+          "<p-button label=\"Primary\" variant=\"outlined\" />\n<p-button label=\"Secondary\" variant=\"outlined\" severity=\"secondary\" />\n<p-button label=\"Success\" variant=\"outlined\" severity=\"success\" />\n<p-button label=\"Info\" variant=\"outlined\" severity=\"info\" />\n<p-button label=\"Warn\" variant=\"outlined\" severity=\"warn\" />\n<p-button label=\"Help\" variant=\"outlined\" severity=\"help\" />\n<p-button label=\"Danger\" variant=\"outlined\" severity=\"danger\" />\n<p-button label=\"Contrast\" variant=\"outlined\" severity=\"contrast\" />",
+          "<p-button label=\"Emails\" badge=\"2\" styleClass=\"m-0\" />\n<p-button label=\"Messages\" icon=\"pi pi-users\" badge=\"2\" badgeSeverity=\"contrast\" styleClass=\"m-0\" [outlined]=\"true\" />",
+          "<p-buttongroup>\n    <p-button label=\"Save\" icon=\"pi pi-check\" />\n    <p-button label=\"Delete\" icon=\"pi pi-trash\" />\n    <p-button label=\"Cancel\" icon=\"pi pi-times\" />\n</p-buttongroup>",
+          "<p-button label=\"Small\" icon=\"pi pi-check\" size=\"small\" />\n<p-button label=\"Normal\" icon=\"pi pi-check\" />\n<p-button label=\"Large\" icon=\"pi pi-check\" size=\"large\" />",
+          "<p-button [outlined]=\"true\">\n    <svg width=\"35\" height=\"40\" viewBox=\"0 0 33 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"block mx-auto\">\n        <path d=\"...\" fill=\"var(--primary-color)\" />\n    </svg>\n</p-button>",
+          "<p-button icon=\"pi pi-check\" aria-label=\"Submit\" />\n<p-button icon=\"pi pi-check\" label=\"Submit\" />\n\n<p-button class=\"youtube p-0\" aria-label=\"Youtube\">\n    <i class=\"pi pi-youtube px-2\"></i>\n    <span class=\"px-4\">Youtube</span>\n</p-button>"
+        ],
+        "properties": [],
+        "events": [],
+        "methods": []
+      },
+      "timestamp": 1762624843787,
+      "ttl": 86400000
+    }
+  ],
+  [
+    "dialog",
+    {
+      "data": {
+        "name": "dialog",
+        "description": "Dialog is a container to display content in an overlay window.",
+        "importStatement": "import { Dialog } from 'primeng/dialog';",
+        "moduleImport": "import { DialogModule } from 'primeng/dialog';",
+        "basicUsage": "import { DialogModule } from 'primeng/dialog';",
+        "examples": [
+          "import { DialogModule } from 'primeng/dialog';",
+          "<p-button (click)=\"showDialog()\" label=\"Show\" />\n<p-dialog header=\"Edit Profile\" [modal]=\"true\" [(visible)]=\"visible\" [style]=\"{ width: '25rem' }\">\n    <span class=\"p-text-secondary block mb-8\">Update your information.</span>\n    <div class=\"flex items-center gap-4 mb-4\">\n        <label for=\"username\" class=\"font-semibold w-24\">Username</label>\n        <input pInputText id=\"username\" class=\"flex-auto\" autocomplete=\"off\" />\n    </div>\n    <div class=\"flex items-center gap-4 mb-8\">\n        <label for=\"email\" class=\"font-semibold w-24\">Email</label>\n        <input pInputText id=\"email\" class=\"flex-auto\" autocomplete=\"off\" />\n    </div>\n    <div class=\"flex justify-end gap-2\">\n        <p-button label=\"Cancel\" severity=\"secondary\" (click)=\"visible = false\" />\n        <p-button label=\"Save\" (click)=\"visible = false\" />\n    </div>\n</p-dialog>",
+          "<p-button (click)=\"showDialog()\" label=\"Show\" />\n<p-dialog header=\"Header\" [modal]=\"true\" [(visible)]=\"visible\" [style]=\"{ width: '50rem' }\" [breakpoints]=\"{ '1199px': '75vw', '575px': '90vw' }\" [maximizable]=\"true\">\n    <p>\n        Lorem ipsum dolor sit amet...\n    </p>\n</p-dialog>",
+          "<p-button (click)=\"showDialog()\" label=\"Show\" />\n<p-dialog header=\"Header\" [modal]=\"true\" [(visible)]=\"visible\" [style]=\"{ width: '50rem' }\" [breakpoints]=\"{ '1199px': '75vw', '575px': '90vw' }\">\n    <p class=\"mb-8\">\n        Lorem ipsum dolor sit amet...\n    </p>\n    <p class=\"mb-8\">\n        \"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...\n    </p>\n    <p class=\"mb-8\">\n        At vero eos et accusamus et iusto odio dignissimos...\n    </p>\n    <p class=\"mb-8\">\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit...\n    </p>\n    <p class=\"mb-8\">\n        \"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...\n    </p>\n    <p>\n        At vero eos et accusamus et iusto odio dignissimos...\n    </p>\n</p-dialog>",
+          "<p-button (click)=\"showDialog()\" label=\"Show\" />\n<p-dialog header=\"Edit Profile\" [(visible)]=\"visible\" [style]=\"{ width: '25rem' }\">\n    <span class=\"p-text-secondary block mb-8\">Update your information.</span>\n    <div class=\"flex items-center gap-4 mb-4\">\n        <label for=\"username\" class=\"font-semibold w-24\">Username</label>\n        <input pInputText id=\"username\" class=\"flex-auto\" autocomplete=\"off\" />\n    </div>\n    <div class=\"flex items-center gap-4 mb-8\">\n        <label for=\"email\" class=\"font-semibold w-24\">Email</label>\n        <input pInputText id=\"email\" class=\"flex-auto\" autocomplete=\"off\" />\n    </div>\n    <div class=\"flex justify-end gap-2\">\n        <p-button label=\"Cancel\" severity=\"secondary\" (click)=\"visible = false\" />\n        <p-button label=\"Save\" (click)=\"visible = false\" />\n    </div>\n</p-dialog>",
+          "<p-button (click)=\"showDialog()\" label=\"Show\" />\n<p-dialog header=\"Header\" [(visible)]=\"visible\" [modal]=\"true\" [breakpoints]=\"{ '1199px': '75vw', '575px': '90vw' }\" [style]=\"{ width: '50vw' }\" [draggable]=\"false\" [resizable]=\"false\">\n    <p>\n        Lorem ipsum dolor sit amet...\n    </p>\n</p-dialog>",
+          "<p-button icon=\"pi pi-external-link\" (click)=\"visible = true\" aria-controls=\"{{visible ? 'dialog' : null}}\" aria-expanded=\"{{visible ? true : false}}\" />\n\n<p-dialog id=\"dialog\" header=\"Header\" [(visible)]=\"visible\" [style]=\"{ width: '50vw' }\" (onHide)=\"visible = false\">\n    <p>Content</p>\n</p-dialog>"
+        ],
+        "properties": [],
+        "events": [],
+        "methods": []
+      },
+      "timestamp": 1762624845942,
+      "ttl": 86400000
+    }
+  ]
+]

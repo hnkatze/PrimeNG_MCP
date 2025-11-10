@@ -122,7 +122,7 @@ export function formatGuideDoc(guide: import('../models/ComponentDoc.js').GuideD
 /**
  * Detects code language from content
  */
-function detectCodeLanguage(code: string): string {
+export function detectCodeLanguage(code: string): string {
   if (code.includes('npm install') || code.includes('yarn add') || code.includes('pnpm add')) {
     return 'bash';
   }

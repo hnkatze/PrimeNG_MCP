@@ -140,7 +140,12 @@ export class PrimeNGServer {
     this.listComponentsTool = new ListComponentsTool();
 
     this.generateCodeTool = new GenerateCodeTool(this.codeGeneratorService);
-    this.getExamplesTool = new GetExamplesTool(this.codeGeneratorService);
+    this.getExamplesTool = new GetExamplesTool(
+      this.scraperService,
+      this.cacheService,
+      this.codeGeneratorService,
+      this.components
+    );
 
     // Guide tools
     this.getInstallationGuideTool = new GetInstallationGuideTool(
